@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.4.2" %}
+{% set version = "0.8.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "bc4d20b641a853c9168d5ecf106892b52b023df9a96baf56e86cb895ced0ddc7" %}
+{% set hash_value = "a0088e4103e8cc311b966627d2cb8cd181d9eb32aef8caa595e0c90dbc52f9a7" %}
 
 package:
   name: '{{ name|lower }}'
