@@ -22,12 +22,14 @@ requirements:
   build:
     - python
     - setuptools
+    - uncertainties
   run:
     - python
     - numpy
     - netcdf4
     - boto3
     - botocore
+    - uncertainties
 
 about:
   home: https://gafusion.github.io/omas
