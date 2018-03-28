@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.4.2" %}
+{% set version = "0.8.5" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "bc4d20b641a853c9168d5ecf106892b52b023df9a96baf56e86cb895ced0ddc7" %}
+{% set hash_value = "82335792ca5779bb7155064e2af3bcb0565ddca8cd8911b43eff5ff80187f3c2" %}
 
 package:
   name: '{{ name|lower }}'
@@ -22,12 +22,14 @@ requirements:
   build:
     - python
     - setuptools
+    - uncertainties
   run:
     - python
     - numpy
     - netcdf4
     - boto3
     - botocore
+    - uncertainties
 
 about:
   home: https://gafusion.github.io/omas
