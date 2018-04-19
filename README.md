@@ -21,12 +21,15 @@ the branches are structures or arrays of structures.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/omas-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/omas-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/omas-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/omas-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/omas/badges/version.svg)](https://anaconda.org/conda-forge/omas)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/omas/badges/downloads.svg)](https://anaconda.org/conda-forge/omas)
+[![Conda Recipe](https://img.shields.io/badge/recipe-omas-green.svg)](https://anaconda.org/conda-forge/omas)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
 
 Installing omas
 ===============
