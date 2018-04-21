@@ -26,10 +26,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-omas-green.svg)](https://anaconda.org/conda-forge/omas)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-omas-green.svg)](https://anaconda.org/conda-forge/omas) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/omas.svg)](https://anaconda.org/conda-forge/omas) |
 
 Installing omas
 ===============
