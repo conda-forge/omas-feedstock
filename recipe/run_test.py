@@ -4,4 +4,5 @@ if 'USER' not in os.environ:
 if 'HOME' not in os.environ:
     os.environ['HOME'] = '/tmp'
 import omas
-omas.test_omas_suite()
+import unittest
+unittest.main(omas)

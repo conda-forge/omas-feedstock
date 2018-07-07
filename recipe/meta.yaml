@@ -30,6 +30,7 @@ requirements:
     - boto3
     - botocore
     - uncertainties
+    - matplotlib
 
 about:
   home: https://gafusion.github.io/omas
