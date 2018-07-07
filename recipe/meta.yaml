@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.17.0" %}
+{% set version = "0.18.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "1afb2a57e23ef1ac6245dc2fade394521d680e7717512656d147485654c77cf3" %}
+{% set hash_value = "aa0048262ff217d66c1865719a42fc8c4c3fec590af512d1bce1a5c5b0b31f2a" %}
 
 package:
   name: '{{ name|lower }}'
@@ -30,6 +30,7 @@ requirements:
     - boto3
     - botocore
     - uncertainties
+    - matplotlib
 
 about:
   home: https://gafusion.github.io/omas
