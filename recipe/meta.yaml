@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "14b281a587c6a587b737a223b44e8ef0827f52c7c41aa773edc34240d0fcd998" %}
+{% set hash_value = "971af877cac1509926d396ab52320ba0b7b47b2874a5b52fc0b64138ec704ca4" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
