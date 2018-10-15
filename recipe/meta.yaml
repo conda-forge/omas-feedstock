@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.26.0" %}
+{% set version = "0.27.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a91514ec8e62ab178b260a2e02b4b19d94ce6e654d38a8c011214a2053b5761b" %}
+{% set hash_value = "1f397fd0593061bc2893cb50d9758ee5786d5103ea606d655cd84269050a2392" %}
 
 package:
   name: '{{ name|lower }}'
@@ -24,14 +24,15 @@ requirements:
     - pip
     - uncertainties
   run:
-    - python
-    - numpy
-    - netcdf4
     - boto3
     - botocore
-    - uncertainties
     - matplotlib
+    - netcdf4
+    - numpy
     - pint
+    - python
+    - uncertainties
+    - xarray
 
 about:
   home: https://gafusion.github.io/omas
