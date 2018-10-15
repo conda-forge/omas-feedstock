@@ -24,14 +24,15 @@ requirements:
     - pip
     - uncertainties
   run:
-    - python
-    - numpy
-    - netcdf4
     - boto3
     - botocore
-    - uncertainties
     - matplotlib
+    - netcdf4
+    - numpy
     - pint
+    - python
+    - uncertainties
+    - xarray
 
 about:
   home: https://gafusion.github.io/omas
