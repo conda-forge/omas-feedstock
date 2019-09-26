@@ -1,8 +1,8 @@
 {% set name = "omas" %}
-{% set version = "0.45.3" %}
+{% set version = "0.46.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "2776bf70fd1b729a776bd6f73c3ea55f94900a65a4e86ba544eacac636f2a564" %}
+{% set hash_value = "dba4a7b70ddef6d274828a7e3f1b5ec6d17ff694dd846ce54c1be358ade09e32" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,7 +15,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
