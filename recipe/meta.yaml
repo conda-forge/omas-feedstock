@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -26,7 +26,7 @@ requirements:
   run:
     - boto3
     - botocore
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - numpy
     - pint
