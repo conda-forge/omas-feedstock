@@ -1,17 +1,14 @@
 {% set name = "omas" %}
-{% set version = "0.53.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "60c4b2d1531f6ca9c27afd2aaa3838fdbe7f4a06b8107f4c7916cc2b1ed6623c" %}
+{% set version = "0.54.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 19731489b816befe19830ed79e4c3f4c6b24dfaca9a6268cd86f5bb0d3dadb2e
 
 build:
   number: 0
@@ -48,10 +45,10 @@ about:
     used for manipulating ITER data. The IMAS data model organizes data
     into a hierarchical tree. There data is stored in the leaf nodes, and
     the branches are structures or arrays of structures.
-  doc_url: 'https://gafusion.github.io/omas'
-  dev_url: 'https://github.com/gafusion/omas'
+  doc_url: https://gafusion.github.io/omas
+  dev_url: https://github.com/gafusion/omas
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - smithsp
     - orso82
