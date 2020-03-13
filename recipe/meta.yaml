@@ -11,7 +11,7 @@ source:
   sha256: 5ae69cecf08cff47c65cb0c948192222551a4f7269a247a7627cddd82adce2bc
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -23,7 +23,7 @@ requirements:
   run:
     - boto3
     - botocore
-    - matplotlib
+    - matplotlib-base
     - netcdf4
     - numpy
     - pint
