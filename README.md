@@ -5,7 +5,7 @@ Home: https://gafusion.github.io/omas
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Ordered Multidimensional Array Structure
 
