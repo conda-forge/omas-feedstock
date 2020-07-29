@@ -1,5 +1,5 @@
 {% set name = "omas" %}
-{% set version = "0.60.0" %}
+{% set version = "0.61.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3f2d0a9700e333f6ecea256d31d58ec6984f087292f8530123d4fbb6a08ccaa9
+  sha256: 94cce2c9223ab38b433cdf293a3a273d40ae4c13faccd9a6d513e9ab58fc3341
 
 build:
   number: 0
