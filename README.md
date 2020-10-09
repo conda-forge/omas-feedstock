@@ -5,9 +5,13 @@ Home: https://gafusion.github.io/omas
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/omas-feedstock/blob/master/LICENSE.txt)
 
 Summary: Ordered Multidimensional Array Structure
+
+Development: https://github.com/gafusion/omas
+
+Documentation: https://gafusion.github.io/omas
 
 OMAS is a set of Python tools that aim at simplifying the interface
 between third-party codes and the ITER IMAS data storage
