@@ -27,7 +27,7 @@ requirements:
     - netcdf4
     - numpy
     - pint
-    - python
+    - python >3.6
     - uncertainties
     - xarray
 
