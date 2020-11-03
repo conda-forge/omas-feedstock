@@ -11,25 +11,28 @@ source:
   sha256: 95bcc25649ca0c69a8e0bd8e79fd91e4ade29e3f110755487c707414104400ff
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   build:
-    - python
+    - python >3.6
     - pip
-    - uncertainties
   run:
+    - python >3.6
+    - numpy >=1.16.1
+    - uncertainties
+    - pint
+    - netcdf4
     - boto3
     - botocore
     - matplotlib-base
-    - netcdf4
-    - numpy
-    - pint
-    - python >3.6
-    - uncertainties
+    - pymongo
+    - dnspython
+    - xmltodict
     - xarray
+    - pyro5
 
 about:
   home: https://gafusion.github.io/omas
