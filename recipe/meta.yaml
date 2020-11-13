@@ -1,5 +1,5 @@
 {% set name = "omas" %}
-{% set version = "0.66.0" %}
+{% set version = "0.67.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,15 +8,15 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 95bcc25649ca0c69a8e0bd8e79fd91e4ade29e3f110755487c707414104400ff
+  sha256: faa9a2ccdba3fa3ef9d0bb8ca2000535f8f192a399998d66024fc9e16158db36
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >3.6
     - pip
   run:
