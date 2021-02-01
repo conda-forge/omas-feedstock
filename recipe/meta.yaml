@@ -1,5 +1,5 @@
 {% set name = "omas" %}
-{% set version = "0.72.0" %}
+{% set version = "0.73.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21591b827ae85e02c271dcf1df0685767b75ad0d0ff52479f2f36333b83eae94
+  sha256: 9b1ed0a3c750a263fb99c0beb953b4eaa35a43887cfdd4159ef5de4830feaa00
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - xmltodict
     - xarray
     - pyro5
+    - Cython
 
 about:
   home: https://gafusion.github.io/omas
