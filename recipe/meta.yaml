@@ -13,12 +13,12 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  noarch: python
 
 requirements:
   host:
     - python >3.6
     - pip
+    - Cython
   run:
     - python >3.6
     - numpy >=1.16.1
