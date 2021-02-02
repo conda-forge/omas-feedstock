@@ -36,6 +36,10 @@ requirements:
     - xarray
     - pyro5
     - Cython
+  test:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - Cython
 
 about:
   home: https://gafusion.github.io/omas
