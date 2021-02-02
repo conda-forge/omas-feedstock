@@ -36,7 +36,8 @@ requirements:
     - xarray
     - pyro5
     - Cython
-  test:
+test:
+  requires:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - Cython
