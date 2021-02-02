@@ -11,17 +11,16 @@ source:
   sha256: 9b1ed0a3c750a263fb99c0beb953b4eaa35a43887cfdd4159ef5de4830feaa00
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
   host:
     - python
     - pip
     - Cython
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   run:
     - python
     - numpy
