@@ -11,17 +11,21 @@ source:
   sha256: 45974e248eb1cb2282f27f1c405228b7b9ff83b95a6401b203d0ba6061be5bc3
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  noarch: python
+  skip: True  # [win]
 
 requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
-    - python >3.6
+    - python
     - pip
+    - Cython
   run:
-    - python >3.6
-    - numpy >=1.16.1
+    - python
+    - numpy
     - uncertainties
     - pint
     - netcdf4
@@ -33,6 +37,12 @@ requirements:
     - xmltodict
     - xarray
     - pyro5
+    - Cython
+test:
+  requires:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - Cython
 
 about:
   home: https://gafusion.github.io/omas
