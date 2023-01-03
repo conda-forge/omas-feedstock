@@ -33,6 +33,7 @@ requirements:
     - xmltodict
     - xarray
     - pyro5
+    - scipy
 
 about:
   home: https://gafusion.github.io/omas
