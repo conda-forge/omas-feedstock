@@ -1,5 +1,5 @@
 {% set name = "omas" %}
-{% set version = "0.92.0" %}
+{% set version = "0.94.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,19 +8,18 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19c2c416c360fd60765a55d672f7fd042973669736431ad3aff1c3c1414d0cec
+  sha256: 528df0a023f1dd173c9011732cc6433db3d22bd1cfb35bdf13e94cc6586ad7dd
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  noarch: python
 
 requirements:
   host:
-    - python >3.6
+    - python
     - pip
   run:
-    - python >3.6
+    - python
     - numpy >=1.16.1
     - uncertainties
     - pint
@@ -34,6 +33,8 @@ requirements:
     - xarray
     - pyro5
     - scipy
+    - cython  # [py>37]
+    - {{ compiler('c') }}  # [py>=312]
 
 about:
   home: https://gafusion.github.io/omas
