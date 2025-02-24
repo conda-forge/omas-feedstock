@@ -36,6 +36,7 @@ requirements:
     - scipy
     - cython  # [py>37]
     - {{ compiler('c') }}  # [py>=312]
+    - setuptools  # [py>=312]
 
 about:
   home: https://gafusion.github.io/omas
