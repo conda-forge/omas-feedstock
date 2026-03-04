@@ -35,6 +35,7 @@ requirements:
     - xarray
     - pyro5
     - scipy
+    - cython
 
 about:
   home: https://gafusion.github.io/omas
