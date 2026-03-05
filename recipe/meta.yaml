@@ -36,7 +36,6 @@ requirements:
     - pyro5
     - scipy
     - cython
-    - distutils
 
 about:
   home: https://gafusion.github.io/omas
